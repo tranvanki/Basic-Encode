@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text;
+using System;
 
 namespace CipherCraft
 {
@@ -10,6 +9,7 @@ namespace CipherCraft
         public abstract int[] OutputCode();
         public abstract string Encode();
         public abstract string Sort();
+        public abstract string Print(); // should return the encoded string only
     }
 
     class StringProcessing : AbstractStringProcessing
@@ -21,10 +21,10 @@ namespace CipherCraft
         public StringProcessing(string inputString, int inputNumber)
         {
             if (!IsValidString(inputString))
-                throw new Exception("An error occurred! Only uppercase letters (A-Z) with max 40 characters are allowed");
+                throw new ArgumentException("Only uppercase letters (A-Z) with max 40 characters are allowed.");
 
             if (inputNumber < -25 || inputNumber > 25)
-                throw new Exception("An error occurred! N must be between -25 and 25.");
+                throw new ArgumentException("N must be between -25 and 25.");
 
             N = inputNumber;
             S = inputString;
@@ -44,51 +44,50 @@ namespace CipherCraft
             return true;
         }
 
-        // Encode method: convert string
         public override string Encode()
         {
             char[] charArray = S.ToCharArray();
             for (int i = 0; i < charArray.Length; i++)
             {
-                charArray[i] = (char)(charArray[i] + N);
-                if (charArray[i] > 'Z')
-                {
-                    charArray[i] = (char)(charArray[i] - 26);
-                }
-                else if (charArray[i] < 'A')
-                {
-                    charArray[i] = (char)(charArray[i] + 26);
-                }
+                char shifted = (char)(charArray[i] + N);
+                if (shifted > 'Z')
+                    shifted = (char)(shifted - 26);
+                else if (shifted < 'A')
+                    shifted = (char)(shifted + 26);
+
+                charArray[i] = shifted;
             }
             return new string(charArray);
         }
+
         public override int[] InputCode()
         {
-            int[] asciiValues = new int[S.Length];
+            int[] codes = new int[S.Length];
             for (int i = 0; i < S.Length; i++)
-            {
-                asciiValues[i] = (int)S[i];
-            }
-            return asciiValues;
+                codes[i] = (int)S[i];
+            return codes;
         }
 
         public override int[] OutputCode()
         {
-            string encodedStr = Encode();
-            int[] asciiValues = new int[encodedStr.Length];
-            for (int i = 0; i < encodedStr.Length; i++)
-            {
-                asciiValues[i] = (int)encodedStr[i];
-            }
-            return asciiValues;
+            string encoded = Encode();
+            int[] codes = new int[encoded.Length];
+            for (int i = 0; i < encoded.Length; i++)
+                codes[i] = (int)encoded[i];
+            return codes;
         }
 
-        // Sort in ascending order
         public override string Sort()
         {
             char[] chars = S.ToCharArray();
             Array.Sort(chars);
             return new string(chars);
+        }
+
+        // ✅ This method must only return the encoded string
+        public override string Print()
+        {
+            return Encode();
         }
     }
 
@@ -98,33 +97,38 @@ namespace CipherCraft
         {
             Console.Write("Enter a string (max 40 uppercase letters): ");
             string inputString = Console.ReadLine();
+
             Console.Write("Enter shift value (-25 to 25): ");
-            int inputNumber = ReadValidInteger();
-            StringProcessing processor = new StringProcessing(inputString, inputNumber);
-            string encodedString = processor.Encode();
+            int shift = ReadValidInteger();
 
-            // Display results
-            Console.WriteLine("\n--- OUTPUT ---");
-            Console.WriteLine($"Original String: {inputString}");
-            Console.WriteLine($"Encoded String: {encodedString}");
-            Console.WriteLine("Input ASCII Codes: " + string.Join(", ", processor.InputCode()));
-            Console.WriteLine("Output ASCII Codes: " + string.Join(", ", processor.OutputCode()));
-            Console.WriteLine("Sorted Input String: " + processor.Sort());
+            try
+            {
+                StringProcessing processor = new StringProcessing(inputString, shift);
 
-            // Reversal check
-            StringProcessing reverseProcessor = new StringProcessing(encodedString, -inputNumber);
-            string decryptedString = reverseProcessor.Encode();
-            Console.WriteLine("\n--- REVERSAL TEST ---");
-            Console.WriteLine($"Decrypted String : {decryptedString}");
+                Console.WriteLine("\n--- OUTPUT ---");
+                Console.WriteLine($"Original String: {inputString}");
+                Console.WriteLine($"Encoded String: {processor.Print()}");
+                Console.WriteLine("Input ASCII Codes: " + string.Join(", ", processor.InputCode()));
+                Console.WriteLine("Output ASCII Codes: " + string.Join(", ", processor.OutputCode()));
+                Console.WriteLine("Sorted Input String: " + processor.Sort());
+
+                // Reversal Test
+                StringProcessing reverseProcessor = new StringProcessing(processor.Encode(), -shift);
+                Console.WriteLine("\n--- REVERSAL TEST ---");
+                Console.WriteLine($"Decrypted String: {reverseProcessor.Print()}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
         }
 
-        // Get valid integer input
         public static int ReadValidInteger()
         {
             int result;
             while (!int.TryParse(Console.ReadLine(), out result) || result < -25 || result > 25)
             {
-                Console.WriteLine("Invalid input! Please enter an integer in range [-25 , 25].");
+                Console.WriteLine("Invalid input! Please enter an integer in range [-25, 25].");
                 Console.Write("Enter shift value: ");
             }
             return result;
