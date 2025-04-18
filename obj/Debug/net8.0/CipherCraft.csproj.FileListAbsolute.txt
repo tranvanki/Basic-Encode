@@ -1,0 +1,42 @@
+C:\Users\trung\Downloads\Hoang\C sharp code\CW1551\CipherCraft\bin\Debug\net8.0\CipherCraft.exe
+C:\Users\trung\Downloads\Hoang\C sharp code\CW1551\CipherCraft\bin\Debug\net8.0\CipherCraft.deps.json
+C:\Users\trung\Downloads\Hoang\C sharp code\CW1551\CipherCraft\bin\Debug\net8.0\CipherCraft.runtimeconfig.json
+C:\Users\trung\Downloads\Hoang\C sharp code\CW1551\CipherCraft\bin\Debug\net8.0\CipherCraft.dll
+C:\Users\trung\Downloads\Hoang\C sharp code\CW1551\CipherCraft\bin\Debug\net8.0\CipherCraft.pdb
+C:\Users\trung\Downloads\Hoang\C sharp code\CW1551\CipherCraft\obj\Debug\net8.0\CipherCraft.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\trung\Downloads\Hoang\C sharp code\CW1551\CipherCraft\obj\Debug\net8.0\CipherCraft.AssemblyInfoInputs.cache
+C:\Users\trung\Downloads\Hoang\C sharp code\CW1551\CipherCraft\obj\Debug\net8.0\CipherCraft.AssemblyInfo.cs
+C:\Users\trung\Downloads\Hoang\C sharp code\CW1551\CipherCraft\obj\Debug\net8.0\CipherCraft.csproj.CoreCompileInputs.cache
+C:\Users\trung\Downloads\Hoang\C sharp code\CW1551\CipherCraft\obj\Debug\net8.0\CipherCraft.dll
+C:\Users\trung\Downloads\Hoang\C sharp code\CW1551\CipherCraft\obj\Debug\net8.0\refint\CipherCraft.dll
+C:\Users\trung\Downloads\Hoang\C sharp code\CW1551\CipherCraft\obj\Debug\net8.0\CipherCraft.pdb
+C:\Users\trung\Downloads\Hoang\C sharp code\CW1551\CipherCraft\obj\Debug\net8.0\CipherCraft.genruntimeconfig.cache
+C:\Users\trung\Downloads\Hoang\C sharp code\CW1551\CipherCraft\obj\Debug\net8.0\ref\CipherCraft.dll
+C:\Users\trung\Downloads\CW1551\CipherCraft\bin\Debug\net8.0\CipherCraft.exe
+C:\Users\trung\Downloads\CW1551\CipherCraft\bin\Debug\net8.0\CipherCraft.deps.json
+C:\Users\trung\Downloads\CW1551\CipherCraft\bin\Debug\net8.0\CipherCraft.runtimeconfig.json
+C:\Users\trung\Downloads\CW1551\CipherCraft\bin\Debug\net8.0\CipherCraft.dll
+C:\Users\trung\Downloads\CW1551\CipherCraft\bin\Debug\net8.0\CipherCraft.pdb
+C:\Users\trung\Downloads\CW1551\CipherCraft\obj\Debug\net8.0\CipherCraft.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\trung\Downloads\CW1551\CipherCraft\obj\Debug\net8.0\CipherCraft.AssemblyInfoInputs.cache
+C:\Users\trung\Downloads\CW1551\CipherCraft\obj\Debug\net8.0\CipherCraft.AssemblyInfo.cs
+C:\Users\trung\Downloads\CW1551\CipherCraft\obj\Debug\net8.0\CipherCraft.csproj.CoreCompileInputs.cache
+C:\Users\trung\Downloads\CW1551\CipherCraft\obj\Debug\net8.0\CipherCraft.dll
+C:\Users\trung\Downloads\CW1551\CipherCraft\obj\Debug\net8.0\refint\CipherCraft.dll
+C:\Users\trung\Downloads\CW1551\CipherCraft\obj\Debug\net8.0\CipherCraft.pdb
+C:\Users\trung\Downloads\CW1551\CipherCraft\obj\Debug\net8.0\CipherCraft.genruntimeconfig.cache
+C:\Users\trung\Downloads\CW1551\CipherCraft\obj\Debug\net8.0\ref\CipherCraft.dll
+C:\Users\trung\Downloads\CW1551\Basic Encode\bin\Debug\net8.0\CipherCraft.exe
+C:\Users\trung\Downloads\CW1551\Basic Encode\bin\Debug\net8.0\CipherCraft.deps.json
+C:\Users\trung\Downloads\CW1551\Basic Encode\bin\Debug\net8.0\CipherCraft.runtimeconfig.json
+C:\Users\trung\Downloads\CW1551\Basic Encode\bin\Debug\net8.0\CipherCraft.dll
+C:\Users\trung\Downloads\CW1551\Basic Encode\bin\Debug\net8.0\CipherCraft.pdb
+C:\Users\trung\Downloads\CW1551\Basic Encode\obj\Debug\net8.0\CipherCraft.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\trung\Downloads\CW1551\Basic Encode\obj\Debug\net8.0\CipherCraft.AssemblyInfoInputs.cache
+C:\Users\trung\Downloads\CW1551\Basic Encode\obj\Debug\net8.0\CipherCraft.AssemblyInfo.cs
+C:\Users\trung\Downloads\CW1551\Basic Encode\obj\Debug\net8.0\CipherCraft.csproj.CoreCompileInputs.cache
+C:\Users\trung\Downloads\CW1551\Basic Encode\obj\Debug\net8.0\CipherCraft.dll
+C:\Users\trung\Downloads\CW1551\Basic Encode\obj\Debug\net8.0\refint\CipherCraft.dll
+C:\Users\trung\Downloads\CW1551\Basic Encode\obj\Debug\net8.0\CipherCraft.pdb
+C:\Users\trung\Downloads\CW1551\Basic Encode\obj\Debug\net8.0\CipherCraft.genruntimeconfig.cache
+C:\Users\trung\Downloads\CW1551\Basic Encode\obj\Debug\net8.0\ref\CipherCraft.dll

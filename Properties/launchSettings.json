@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "CipherCraft": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

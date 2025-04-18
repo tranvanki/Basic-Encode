@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>CipherCraft</id>
+    <version>1.0.0</version>
+    <authors>CipherCraft</authors>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" version="1.21.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\trung\Downloads\Hoang\C sharp code\CW1551\CipherCraft\bin\Debug\net8.0\CipherCraft.runtimeconfig.json" target="lib\net8.0\CipherCraft.runtimeconfig.json" />
+    <file src="C:\Users\trung\Downloads\Hoang\C sharp code\CW1551\CipherCraft\bin\Debug\net8.0\CipherCraft.dll" target="lib\net8.0\CipherCraft.dll" />
+  </files>
+</package>
